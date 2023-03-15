@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <div class="container">
+        <div class="header">
+            <h2>ECO-STORE: Productos</h2>
+        </div>
+        <div class="body">
+            <div class="body-left">
+                <div class="product-container">
+                    <div class="product">
+                        <div class="product-image-container">
+                            <img id="product-info-image" src="./images/1.jpg" alt="">
+                        </div>
+                        <div class="product-buttons-container">
+                            <div class="product-buttons">
+                                <button id="product-btn-add" class="btn tooltip">
+                                    <span class="tooltip-text">Añadir nuevo producto</span>
+                                </button>
+                                <button id="product-btn-edt" class="btn tooltip">
+                                    <span class="tooltip-text">Editar el producto</span>
+                                </button>
+                                <button id="product-btn-del" class="btn tooltip">
+                                    <span class="tooltip-text">Eliminar el producto</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-right">
+                <div class="product-info-container">
+                    <div class="product-info">
+                        <div class="product-info-item product-id-container">
+                            <label for="">Id</label>
+                            <input class="input" type="text" id="product-info-id">
+                        </div>
+                        <div class="product-info-item product-title-container">
+                            <label for="">Titulo</label>
+                            <input class="input" type="text" id="product-info-title">
+                        </div>
+                        <div class="product-info-item product-description-container">
+                            <label for="">Descripcion</label>
+                            <textarea class="input" id="product-info-description"></textarea>
+                        </div>
+                        <div class="product-info-item product-price-container">
+                            <label for="">Precio</label>
+                            <input class="input" type="text" id="product-info-price">
+                        </div>
+                        <div class="product-info-item product-amount-container">
+                            <label for="">Cantidad</label>
+                            <input class="input" type="text" id="product-info-amount">
+                        </div>
+                        <div class="product-info-item product-discount-container">
+                            <label for="">Descuento</label>
+                            <select class="input" type="text" id="product-info-discount">
+                                <option value="1" selected="selected">Si</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                        <div class="product-info-item product-discount-per-container">
+                            <label for="">%</label>
+                            <input class="input" type="text" id="product-info-discount-per">
+                        </div>
+                        <div class="product-info-item product-discount-uni-container">
+                            <label for="">Unid.</label>
+                            <input class="input" type="text" id="product-info-discount-uni">
+                        </div>
+                        <div class="product-info-item product-img-container">
+                            <label for="">Imagen</label>
+                            <input class="input" type="file" id="product-info-img" accept="image/png, image/gif, image/jpeg">
+                        </div>
+                        <div class="product-info-buttons-container">
+                            <button id="product-info-previus" class="btn tooltip">
+                                Anterior
+                                <span class="tooltip-text">Producto anterior</span>
+                            </button>
+                            <button id="product-info-next" class="btn tooltip">
+                                Siguiente
+                                <span class="tooltip-text">Producto siguiente</span>
+                            </button>
+                            <button hidden id="product-info-save" class="btn tooltip">
+                                Guardar
+                                <span class="tooltip-text">Guardar el producto</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <div id="modal-header">
+            <span id="modal-title">Error</span>
+            <button id="button-close-top">X</button>
+        </div>
+        <div id="modal-body">
+            <span id="modal-body-text">No hay mas registros</span>
+        </div>
+        <div id="modal-footer">
+            <button id="button-close-bottom" class="btn tooltip">
+                Close
+                <span class="tooltip-text">Cerrar modal</span>
+            </button>
+        </div>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
